@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <!--  -->
+    <style>
+      #submitBtn:hover {
+        background: linear-gradient(to right, #fe5196, #f77062);
+      }
+      @media (min-width: 768px) {
+        #mainImg {
+          content: url(assets/images/illustration-sign-up-desktop.svg);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-CharcoalGrey min-h-screen font-Roboto flex flex-col items-center justify-center box-border"
+  >
+    <article
+      class="bg-White md:max-w-[930px] md:max-h-[640px] flex md:flex-row flex-col-reverse w-full md:rounded-[30px]"
+    >
+      <div class="flex flex-col items-start md:px-[60px] md:py-[80px] p-[25px]">
+        <h1 class="text-DarkSlateGrey font-bold md:text-[53px] mb-[10px] text-[37px]">
+          Stay updated!
+        </h1>
+        <p class="text-CharcoalGrey mb-[20px]">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="mb-[40px]">
+          <li class="pb-[5px] text-CharcoalGrey">
+            <img
+              src="assets/images/icon-success.svg"
+              alt="#"
+              class="w-[19px] inline"
+            /><span class="ml-[15px]"
+              >Product discovery and building what matters</span
+            >
+          </li>
+          <li class="pb-[5px] text-CharcoalGrey">
+            <img
+              src="assets/images/icon-success.svg"
+              alt="#"
+              class="w-[19px] inline"
+            /><span class="ml-[15px] text-CharcoalGrey"
+              >Measuring to ensure updates are a success</span
+            >
+          </li>
+          <li>
+            <img
+              src="assets/images/icon-success.svg"
+              alt="#"
+              class="w-[19px] inline"
+            /><span class="ml-[15px]">And much more!</span>
+          </li>
+        </ul>
+        <form action="#" class="w-full pb-[10px] md:pb-0" method="post" id="emailForm">
+          <div
+            class="flex flex-row justify-between text-sm font-[500] mb-[10px]"
+          >
+            <label for="email" class="text-DarkSlateGrey font-bold">Email address</label>
+            <div class="inline text-Tomato font-bold" id="error"></div>
+          </div>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            required
+            placeholder="email@company.com"
+            class="py-[14px] px-[20px] mb-[20px] flex flex-col items-center justify-center bg-white w-full rounded-lg border-solid border-Grey border-[1px] cursor-pointer"
+          />
+          <input
+            id="submitBtn"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            class="bg-DarkSlateGrey w-full p-[14px] rounded-lg text-white font-[600] text-[15px] cursor-pointer"
+          />
+        </form>
+      </div>
+      <div id="mainImg" class="md:p-[20px] w-full md:w-auto">
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="#"
+          class="w-full"
+        />
+      </div>
+    </article>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

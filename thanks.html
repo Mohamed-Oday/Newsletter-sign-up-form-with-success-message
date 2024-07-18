@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks!</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <!--  -->
+    <style>
+        #dismissBtn:hover {
+          background: linear-gradient(to right, #fe5196, #f77062);
+        }
+      </style>
+</head>
+<body class="bg-white md:bg-CharcoalGrey min-h-screen flex flex-col items-center justify-center box-border font-Roboto">
+    <main class="bg-white flex flex-col items-start justify-center p-[60px] md:max-w-[505px] md:max-h-[520px] md:rounded-[20px]">
+        <img src="assets/images/icon-success.svg" alt="#" class="mt-[-20px] mb-[20px]">
+        <h1 class="text-DarkSlateGrey font-bold text-[50px] leading-[55px]">Thanks for subscribing!</h1>
+        <p class="text-CharcoalGrey mt-[20px] font-[500]">A confirmation email has been sent to <span id="email" class="font-bold"></span>. Please open it and click the button inside to confirm your subscription</p>
+        <button id="dismissBtn" class="bg-DarkSlateGrey w-full p-[15px] rounded-lg mt-[35px] text-white font-[600]">Dismiss message</button>
+    </main>
+
+    <script src="assets/js/main2.js"></script>
+</body>
+</html>

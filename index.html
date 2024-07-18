@@ -32,6 +32,12 @@
           content: url(assets/images/illustration-sign-up-desktop.svg);
         }
       }
+      #item-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
     </style>
   </head>
   <body
@@ -48,30 +54,30 @@
           Join 60,000+ product managers receiving monthly updates on:
         </p>
         <ul class="mb-[40px]">
-          <li class="pb-[5px] text-CharcoalGrey">
+          <li id="item-list" class="pb-[5px] text-CharcoalGrey">
             <img
               src="assets/images/icon-success.svg"
               alt="#"
-              class="w-[19px] inline"
-            /><span class="ml-[15px]"
-              >Product discovery and building what matters</span
+              class="w-[19px]"
+            /><p class="ml-[15px]"
+              >Product discovery and building what matters</p
             >
           </li>
-          <li class="pb-[5px] text-CharcoalGrey">
+          <li id="item-list" class="pb-[5px] text-CharcoalGrey">
             <img
               src="assets/images/icon-success.svg"
               alt="#"
-              class="w-[19px] inline"
-            /><span class="ml-[15px] text-CharcoalGrey"
-              >Measuring to ensure updates are a success</span
+              class="w-[19px]"
+            /><p class="ml-[15px] text-CharcoalGrey"
+              >Measuring to ensure updates are a success</p
             >
           </li>
-          <li>
+          <li id="item-list">
             <img
               src="assets/images/icon-success.svg"
               alt="#"
-              class="w-[19px] inline"
-            /><span class="ml-[15px]">And much more!</span>
+              class="w-[19px]"
+            /><p class="ml-[15px]">And much more!</p>
           </li>
         </ul>
         <form action="#" class="w-full pb-[10px] md:pb-0" method="post" id="emailForm">
